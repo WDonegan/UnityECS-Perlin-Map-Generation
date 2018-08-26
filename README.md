@@ -9,7 +9,8 @@ are 3 hard coded layers and currently you cannot add or remove layers. There is 
 select each layer to manipulate it. There are also options to link the x and y offsets, as well
 as to Band and Outline the map. 
 
-(BAND) My term for creating a contour map of the combined perlin data. 
+(BAND) My term for creating a contour map of the combined perlin data.
+
 (OUTLINE) Pretty self explanatory, outlines the various banded regions.
           Note: Doesnt work correctly unless banding is enabled, need to 
           fix in the UI so its not available independently. 
