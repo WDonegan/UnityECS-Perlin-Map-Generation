@@ -50,7 +50,7 @@ namespace PerlinPlayground.UI {
                     offsetX = 0,
                     offsetY = 0,
                     mapData = new float[width * height],
-                    texture = new Texture2D(width, height) { filterMode = FilterMode.Point }
+                    texture = new Texture2D(width, height) { filterMode = FilterMode.Point, anisoLevel=0, requestedMipmapLevel=0 }
                 };
                 UpdateMap(layerData[i]);
             }

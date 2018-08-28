@@ -18,4 +18,9 @@ namespace PerlinPlayground.Components
     {
         public int Value;
     }
+
+    public struct MapHeightComponent : IComponentData
+    {
+        public float Value;
+    }
 }

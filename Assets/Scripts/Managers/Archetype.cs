@@ -8,8 +8,8 @@ namespace PerlinPlayground.Managers
 
 
         public static EntityArchetype Base;
-        
 
+        public static EntityArchetype Terrain;
 
         public static void Initialize(EntityManager entityManager)
         {
@@ -24,6 +24,15 @@ namespace PerlinPlayground.Managers
             GridData = entityManager.CreateArchetype(
                 typeof(Components.MapDataComponent),
                 typeof(Components.MapIndexComponent));
+
+
+            Terrain =  entityManager.CreateArchetype(
+                typeof(Components.Transform.Pos),
+                typeof(Components.Transform.Rot),
+                typeof(Components.Transform.Scl),
+                typeof(Components.Transform.ModelMatrix),
+                typeof(Components.MapIndexComponent),
+                typeof(Unity.Rendering.MeshInstanceRenderer));
         }
 
 

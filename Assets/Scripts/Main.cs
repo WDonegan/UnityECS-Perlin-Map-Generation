@@ -25,8 +25,6 @@ namespace PerlinPlayground
         {
             entityManager = World.Active.GetOrCreateManager<EntityManager>();
             Managers.Archetype.Initialize(entityManager);
-
-            //Unity.Entities.World.Active.GetExistingManager<MapBandingSystem>().Enabled = false;
         }
 
         /// <summary>
